@@ -2,7 +2,7 @@ PredisExtension
 ================
 
 The *PredisExtension* provides access to a Redis instances
-through Daniele Alessandri's `Predis <https://github.com/doctrine/mongodb>`_
+through Daniele Alessandri's `Predis <https://github.com/nrk/predis>`_
 library.
 
 Parameters
@@ -31,9 +31,7 @@ directory.
 
   Example registration and configuration::
 
-    // add SilexExtension library to the autoloader 
-    $app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/path/to/silex-extensions');
-    $app->register(new SilexExtension\PredisExtension(), array(
+    $app->register(new SilexPredis\PredisExtension(), array(
         'predis.class_path'    => __DIR__ . '/vendor/predis/lib',
         'predis.server'  => array(
             'host' => '127.0.0.1',

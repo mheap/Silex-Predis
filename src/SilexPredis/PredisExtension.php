@@ -1,7 +1,7 @@
 <?php
 
 
-namespace SilexExtension;
+namespace SilexPredis;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;

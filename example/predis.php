@@ -1,12 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../functions.php';
-require_once __DIR__ . '/../silex.phar';
-
 $app = new Silex\Application();
 
-$app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/../src');
-$app->register(new SilexExtension\PredisExtension(), array(
+$app->register(new SilexPredis\PredisExtension(), array(
     'predis.class_path'    => __DIR__ . '/../vendor/predis/lib',
     'predis.server'  => array(
         'host' => '127.0.0.1',

@@ -1,12 +1,12 @@
 <?php
 
-namespace SilexExtension\Tests\Extension;
+namespace SilexPredis\Tests\Extension;
 
 use Silex\Application;
 
 use Symfony\Component\HttpFoundation\Request;
 
-use SilexExtension\PredisExtension;
+use SilexPredis\PredisExtension;
 
 class PredisExtensionTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,7 +21,6 @@ class PredisExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new PredisExtension(), array(
-            'predis.class_path' => __DIR__ . '/../../../vendor/predis/lib',
             'predis.config'  => array(
                 'prefix' => 'predis__'
             )
@@ -45,7 +44,6 @@ class PredisExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new PredisExtension(), array(
-            'predis.class_path' => __DIR__ . '/../../../vendor/predis/lib',
             'predis.server'  => array(
                 'port' => 0,
                 'host' => '0.0.0.0'
@@ -65,7 +63,6 @@ class PredisExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new PredisExtension(), array(
-            'predis.class_path' => __DIR__ . '/../../../vendor/predis/lib',
             'predis.config'  => array(
                 'prefix' => 'predis__'
             )
