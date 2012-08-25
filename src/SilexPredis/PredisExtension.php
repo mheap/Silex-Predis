@@ -9,7 +9,7 @@ use Silex\ServiceProviderInterface;
 use Predis\Client,
     Predis\Option\ClientOptions,
     Predis\DispatcherLoop,
-    Predis\ConnectionParameters;
+    Predis\Connection\ConnectionParameters;
 
 class PredisExtension implements ServiceProviderInterface
 {
