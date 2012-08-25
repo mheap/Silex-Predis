@@ -1,7 +1,7 @@
 Silex-Predis
 ================
 
-[![Build Status](https://secure.travis-ci.org/mheap/Silex-Gravatar.png?branch=master)](http://travis-ci.org/mheap/Silex-Gravatar)
+[![Build Status](https://secure.travis-ci.org/mheap/Silex-Predis.png?branch=master)](http://travis-ci.org/mheap/Silex-Predis)
 
 Installation
 ------------
