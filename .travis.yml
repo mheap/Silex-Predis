@@ -1,8 +1,11 @@
 language: php
 
 php:
-  - 5.3
-  - 5.4
-  
+  - 7.0
+  - 7.1
+
 before_script:
   - "sh bin/travis-init.sh"
+
+services:
+  - redis-server
